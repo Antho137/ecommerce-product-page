@@ -1,0 +1,371 @@
+body {
+    margin: 0 auto;	
+}
+.container-fluid {
+	height: 100vh;
+    overflow: auto;
+}
+#head {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+#nav {
+    margin: 0;
+    padding: 0 20px;
+}
+.logo {
+    width: 40%;
+}
+#nav button {
+    padding-left: 10px;
+    width: 40px;
+    border: none;
+}
+#navbar a {
+    color: #000;
+    font-size: .875rem;
+    text-align: left;
+    width: 50%;
+}
+#navbar  {
+    width: 50%;
+    position: absolute;
+    height: 100vh;
+    top: 4rem;
+    padding-left: .625rem;
+    gap: 1rem;
+    background-color: #fff;
+    z-index: 200;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+#mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#mobile .cart {
+    padding: 0 10px 0 70px;
+}  
+#mobile .avatar {
+    max-width: 10%;
+    height: auto;
+} 
+#navbarImg .avatar, #mobile .avatar {
+    width: 25%;
+    height: auto;
+} 
+#navbar .avatar, #navbar .cart, #image .thumbnail {
+    display: none;
+} 
+#one {
+    width: 100%;
+    float: left;
+    margin: 10px 0 30px;
+}
+#one {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    min-height: auto;
+}
+#productImg {
+    padding: 20px;
+}
+.thumbnail-list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+.thumbnail-item {
+    display: inline;
+}
+.thumbnail-item:active, .thumbnail-item:hover {
+    opacity: .17;
+    border-radius: 10px;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+.thumbnail-image {
+    display: block;
+    width: 100%;
+}
+.detail-image-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-image-frame {
+  position: relative;
+  text-align: center;
+}
+.detail-image {
+  width: 100%;
+  padding-bottom: 10px;
+}
+#intro {
+    font-size: 1.125rem;
+    padding: 10px 20px;
+}
+#intro .company {
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+}
+#intro h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+div .price-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div .price {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+div .percent {
+    margin: 0 20px;
+    padding: 0 10px 5px;
+    font-size: 1rem;
+    color: hsl(26, 100%, 55%);
+}
+div .old-price {
+    margin: 12px 10px 0 0;
+}
+div button {
+    font-size: 1rem;
+    padding: 10px 15px 15px;
+    border: #d3d3d3;
+    border-radius: 10px;
+}
+div .number-box {
+    margin: 10px 0;
+}
+div #increase, div #decrease {
+    width: 25%;
+}
+div #increase {
+    float: right;
+    text-align: right;
+}
+div #decrease {
+    float: left;
+    text-align: left;
+}
+div #quantity {
+    width: 20px;
+    border: none;
+    margin: 20px 0 0 3px;
+}
+div #add {
+    width: 100%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+}
+div .tocart {
+    padding-left: 20px;
+}
+.attribution {
+    padding: 20px; 
+    font-size: 1rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 480px) { 
+
+    .logo {
+        width: 30%;
+    }    
+#mobile .cart {
+    padding: 0 20px 0 150px;
+} 
+}     
+
+@media only screen and (min-width: 576px) {
+    
+    #mobile .cart {
+        padding: 0 10px 0 130px;
+    }
+}    
+#one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: auto;
+}
+#intro {
+    font-size: 1.125rem;
+    padding: 20px 20px;
+}
+div #increase, div #decrease {
+    width: 44%;
+    margin: 10px 1%;
+}
+
+@media only screen and (min-width: 720px) {
+    
+    #mobile .cart {
+        padding: 0 20px 0 150px;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+	
+    #head {
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+    }
+    #navbar {
+        width: 100%;
+        position: relative;
+        height: 0;
+        top: -1.5rem;
+        background-color: none;
+        flex-direction: row;
+	    padding-left: 10px;
+    }
+    #navbar a {
+        width: 100%;
+    }
+.logo {
+    width: 100%;
+    padding: 20px;
+}
+.active {
+    width: 100%;
+    height: 4.375rem;
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+} 
+#mobile .avatar, #mobile .cart {
+    display: none;
+} 
+#navbar .avatar, #navbar .cart, #image .thumbnail {
+    display: inline;
+}   
+#one {
+    padding: 50px 10px;
+}
+
+.thumbnail-list {
+  margin-top: 20px;
+}
+
+.thumbnail-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#productImg, #intro {
+    padding: 0 20px;
+}
+
+#intro {
+    font-size: 1.125rem;
+    padding: 20px 20px;
+}
+#one img {
+    border-radius: 10px;
+}
+#navbarImg {
+	padding-left: 100px;
+}
+#navbarImg .avatar {
+    width: 40%;
+    padding: 0 0 0 20px;
+}
+#intro h1 {
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+#intro {
+    padding: 0 40px;
+}
+div .button-list {
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 850px) {
+	
+#navbar {
+	padding-left: 50px;
+}
+#navbarImg {
+	padding-left: 170px;
+}
+div .price-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div #add {
+  width: 50%;
+} 
+div #increase, div #decrease {
+    width: 15%;
+    float: none;
+    text-align: center; 
+} 
+}
+
+@media only screen and (min-width: 960px) {
+
+#navbarImg .avatar {
+    width: 30%;
+}
+#navbarImg {
+	padding-left: 240px;
+} 
+#navbarImg .avatar {
+    margin-left: 30px;
+}    
+#intro {
+    padding-top: 70px;
+}
+div #add {
+  width: 50%;
+} 
+}
+
+@media only screen and (min-width: 1020px) {
+
+#navbarImg .avatar {
+    width: 35%;
+}
+#navbarImg {
+	padding-left: 300px;
+}
+
+#productImg {
+    padding: 0 40px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .logo {
+        padding-left: 0;
+    }
+    #navbarImg {
+        padding-left: 380px;
+}
+#navbarImg .avatar {
+    margin-left: 30px;
+}
+  
+.thumbnail-item {
+  max-width: 22%;
+}
+}

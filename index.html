@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet"  href="index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-sm-center">	
+        <header class="col-sm-8 offset-sm-2 col-md-12 col-xl-10 offset-xl-1" id="head">
+          <nav class="navbar navbar-expand-md navbar-light" id="nav">    
+            <p id="mobile">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <img src="./images/icon-menu.svg" class="img-responsive" alt="menu">
+              </button>
+              <img src="./images/logo.svg" class="logo" alt="logo" />
+              <img src="./images/icon-cart.svg" class="cart" alt="cart">
+              <img src="./images/image-avatar.png" class="avatar" alt="avatar">
+            </p>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav justify-content-start">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Woman</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <div id="navbarImg">
+                <p><img src="./images/icon-cart.svg" class="cart" alt="cart">
+                  <img src="./images/image-avatar.png" class="avatar" alt="avatar"></p>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+			<div class="row justify-content-sm-center" id="first">
+        <div class="col-sm-8 offset-sm-2 col-md-12 col-xl-10 offset-xl-1" id="one">
+          <div class="col-md-6" id="productImg">
+            <div class="detail-image-container">
+              <div class="detail-image-frame">
+                <img class="detail-image" data-image-role="target" src="./images/image-product-1.jpg" id="product" alt="product1">
+              </div>
+            </div>
+            <ul class="thumbnail-list">
+              <li class="thumbnail-item">
+                <a href="./images/image-product-1-thumbnail.jpg" data-image-role="trigger" data-image-url="./images/image-product-1.jpg">
+                  <img class="thumbnail-image" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+                </a>
+              </li>
+              <li class="thumbnail-item">
+                <a href="./images/image-product-2-thumbnail.jpg" data-image-role="trigger" data-image-url="./images/image-product-2.jpg">
+                  <img class="thumbnail-image" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail2">
+                </a>
+              </li>
+              <li class="thumbnail-item">
+                <a href="./images/image-product-3-thumbnail.jpg" data-image-role="trigger" data-image-url="./images/image-product-3.jpg">
+                  <img class="thumbnail-image" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail3">
+                </a>
+              </li>
+              <li class="thumbnail-item">
+                <a href="./images/image-product-4-thumbnail.jpg" data-image-role="trigger" data-image-url="./images/image-product-4.jpg">
+                  <img class="thumbnail-image" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail4">
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="col-md-6" id="intro">
+            <p class="company">Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div class="price-section">
+              <div class="price">$125.00 <span class="percent">50%</span></div>
+              <div class="old-price"><del>$250.00</del></div>
+            </div>
+            <div class="button-list">
+              <div class="number-box">
+                <button id="decrease">
+                  <img src="images/icon-minus.svg" alt="icon-minus">
+                </button>
+                <input type="text" name="quantity" id="quantity" value="0" />
+                <button id="increase">
+                  <img src="images/icon-plus.svg" alt="icon-plus">
+                </button>          
+                <button id="add">
+                  <img src="./images/icon-cart.svg" class="img-responsive" alt="cart"><span class="tocart">Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-sm-center" id="fiveth">          
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Antonio Sala</a>.
+        </div>          
+      </div> 
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
